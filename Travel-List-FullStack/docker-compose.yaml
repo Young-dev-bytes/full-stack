@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  travel-list-restful-api:
+    image: younghub/travel-list-restful-api:0.0.1-SNAPSHOP
+    container_name: travel-list-restful-api
+    build:
+      context: travel-list-restful-api
+      dockerfile: Dockerfile
+
+    ports:
+      - "8080:8080"
+    #    environment:
+    #      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - fullstack
+
+  travel-list:
+    image: younghub/travel-list:0.0.1-SNAPSHOP
+    container_name: travel-list
+    build:
+      context: travel-list
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    #    environment:
+    #      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - fullstack
+    depends_on:
+      - travel-list-restful-api
+
+networks:
+  fullstack:

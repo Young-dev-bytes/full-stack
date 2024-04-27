@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+  fast-youngs-pizza-restful-api:
+    image: younghub/fast-youngs-pizza-restful-api:0.0.1-SNAPSHOP
+    container_name: fast-youngs-pizza-restful-api
+    build:
+      context: fast-Young's-pizza-restful-api
+      dockerfile: Dockerfile
+
+    ports:
+      - "8080:8080"
+    #    environment:
+    #      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - fullstack
+
+  fast-youngs-pizza:
+    image: younghub/fast-youngs-pizza:0.0.1-SNAPSHOP
+    container_name: fast-youngs-pizza
+    build:
+      context: fast-Young's-pizza
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    #    environment:
+    #      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - fullstack
+    depends_on:
+      - fast-youngs-pizza-restful-api
+
+networks:
+  fullstack:

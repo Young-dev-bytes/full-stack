@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Travel-List-FullStack.iml" filepath="$PROJECT_DIR$/.idea/Travel-List-FullStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/travel-list-restful-api/fast-Young-pizz-restful-api.iml" filepath="$PROJECT_DIR$/travel-list-restful-api/fast-Young-pizz-restful-api.iml" />
+    </modules>
+  </component>
+</project>
