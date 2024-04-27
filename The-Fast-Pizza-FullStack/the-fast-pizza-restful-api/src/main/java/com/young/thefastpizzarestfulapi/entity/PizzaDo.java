@@ -7,7 +7,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-@TableName("pizza")
+@TableName("t_pizza")
 public class PizzaDo {
 
     private Long id;
@@ -16,13 +16,12 @@ public class PizzaDo {
 
     private String ingredients;
 
-    private String photoName;
+    private String unitPrice;
 
-    private boolean soldOut;
+    private String imageUrl;
 
-    private Double price;
+    private String soldOut;
 
-    private LocalDate createDate;
-
+    private LocalDate createTime;
 }
 
