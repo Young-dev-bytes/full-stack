@@ -6,4 +6,6 @@ import com.young.thefastpizzarestfulapi.entity.UserDo;
 
 public interface PizzaMapper extends BaseMapper<PizzaDo> {
 
+
 }
+
