@@ -1,4 +1,4 @@
-package com.young.thefastpizzarestfulapi.cache;
+package com.young.thefastpizzarestfulapi.common.cache;
 
 public enum GuavaRefreshEnum {
 

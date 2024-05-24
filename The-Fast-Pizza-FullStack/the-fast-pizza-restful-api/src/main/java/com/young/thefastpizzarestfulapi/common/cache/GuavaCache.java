@@ -1,4 +1,4 @@
-package com.young.thefastpizzarestfulapi.cache;
+package com.young.thefastpizzarestfulapi.common.cache;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
@@ -36,6 +36,7 @@ public abstract class GuavaCache<K, V> {
         if (this.cache == null) {
             synchronized (this) {
                 if (this.cache == null) {
+
                     CacheBuilder cacheBuilder = CacheBuilder.newBuilder().maximumSize(this.maximumSize);
                     switch (this.guavaFreshEnum) {
                         case EXPIRE_AFTER_WRITE:
@@ -44,7 +45,14 @@ public abstract class GuavaCache<K, V> {
                         case EXPIRE_AFTER_ACCESS:
                             cacheBuilder.expireAfterAccess(this.expireDuration, TimeUnit.SECONDS);
                             break;
+                        default:
+
                     }
+
+                    cacheBuilder.removalListener(notification -> {
+                        System.out.println(notification.getKey() + " - " + notification.getValue() + " - " + notification.getCause());
+                    });
+
                     this.cache = cacheBuilder.build(new CacheLoader<K, V>() {
                         @Override
                         public V load(K key) throws Exception {
@@ -60,5 +68,12 @@ public abstract class GuavaCache<K, V> {
         }
         return this.cache;
     }
+
+    /**
+     * fetch data
+     *
+     * @param key key
+     * @return v
+     */
     protected abstract V fetchData(K key);
 }

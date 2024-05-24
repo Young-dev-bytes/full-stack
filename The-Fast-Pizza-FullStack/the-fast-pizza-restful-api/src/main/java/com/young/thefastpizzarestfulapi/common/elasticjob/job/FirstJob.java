@@ -1,4 +1,4 @@
-package com.young.thefastpizzarestfulapi.elasticjob.job;
+package com.young.thefastpizzarestfulapi.common.elasticjob.job;
 
 import org.apache.shardingsphere.elasticjob.api.ShardingContext;
 import org.apache.shardingsphere.elasticjob.simple.job.SimpleJob;
@@ -9,7 +9,7 @@ public class FirstJob implements SimpleJob {
     @Override
     public void execute(ShardingContext shardingContext) {
 
-        // System.out.println("first job");
+        System.out.println("first job");
 
         /*int shardingItem = shardingContext.getShardingItem();
 

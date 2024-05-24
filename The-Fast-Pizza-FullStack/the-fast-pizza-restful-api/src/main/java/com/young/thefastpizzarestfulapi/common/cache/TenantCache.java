@@ -1,8 +1,6 @@
-package com.young.thefastpizzarestfulapi.cache;
+package com.young.thefastpizzarestfulapi.common.cache;
 
 import org.springframework.stereotype.Component;
-
-import java.util.concurrent.ExecutionException;
 
 @Component
 public class TenantCache extends GuavaCache<String, String> {
@@ -18,8 +16,8 @@ public class TenantCache extends GuavaCache<String, String> {
         return "tenantCode";
     }
 
-    public static void main(String[] args) throws ExecutionException {
+    /*public static void main(String[] args) throws ExecutionException {
         String tenantCode = new TenantCache().getValue("tenantCode");
         System.out.println("tenantCode:" + tenantCode);
-    }
+    }*/
 }
