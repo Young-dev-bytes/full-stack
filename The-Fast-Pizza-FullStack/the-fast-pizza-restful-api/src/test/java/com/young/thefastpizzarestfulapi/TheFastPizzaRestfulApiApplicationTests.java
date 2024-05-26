@@ -15,6 +15,8 @@ class TheFastPizzaRestfulApiApplicationTests {
     void contextLoads() {
         PizzaDo pizzaDo = pizzaMapper.selectById(1001);
         System.out.println(pizzaDo);
+
+
     }
 
 }
