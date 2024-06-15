@@ -1,0 +1,110 @@
+{
+  "nameShort": "code-server",
+  "nameLong": "code-server",
+  "applicationName": "code-server",
+  "dataFolderName": ".code-server",
+  "win32MutexName": "codeserver",
+  "licenseName": "MIT",
+  "licenseUrl": "https://github.com/coder/code-server/blob/main/LICENSE",
+  "serverLicenseUrl": "https://github.com/microsoft/vscode/blob/main/LICENSE.txt",
+  "serverGreeting": [],
+  "serverLicense": [],
+  "serverLicensePrompt": "",
+  "serverApplicationName": "code-server-oss",
+  "serverDataFolderName": ".vscode-server-oss",
+  "tunnelApplicationName": "code-tunnel-oss",
+  "win32DirName": "code-server",
+  "win32NameVersion": "code-server",
+  "win32RegValueName": "CodeOSS",
+  "win32x64AppId": "{{D77B7E06-80BA-4137-BCF4-654B95CCEBC5}",
+  "win32arm64AppId": "{{D1ACE434-89C5-48D1-88D3-E2991DF85475}",
+  "win32x64UserAppId": "{{CC6B787D-37A0-49E8-AE24-8559A032BE0C}",
+  "win32arm64UserAppId": "{{3AEBF0C8-F733-4AD4-BADE-FDB816D53D7B}",
+  "win32AppUserModelId": "coder.code-server",
+  "win32ShellNameShort": "c&ode-server",
+  "win32TunnelServiceMutex": "vscodeoss-tunnelservice",
+  "win32TunnelMutex": "vscodeoss-tunnel",
+  "darwinBundleIdentifier": "com.coder.code.server",
+  "linuxIconName": "com.coder.code.server",
+  "licenseFileName": "LICENSE.txt",
+  "reportIssueUrl": "https://github.com/coder/code-server/issues/new",
+  "nodejsRepository": "https://nodejs.org",
+  "urlProtocol": "code-oss",
+  "webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
+  "builtInExtensions": [
+    {
+      "name": "ms-vscode.js-debug-companion",
+      "version": "1.1.2",
+      "sha256": "e034b8b41beb4e97e02c70f7175bd88abe66048374c2bd629f54bb33354bc2aa",
+      "repo": "https://github.com/microsoft/vscode-js-debug-companion",
+      "metadata": {
+        "id": "99cb0b7f-7354-4278-b8da-6cc79972169d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.js-debug",
+      "version": "1.89.0",
+      "sha256": "2abd9c01f711c0d60d40b722b5bed0930701be173931f3c6251906f692858221",
+      "repo": "https://github.com/microsoft/vscode-js-debug",
+      "metadata": {
+        "id": "25629058-ddac-4e17-abba-74678e126c5d",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    },
+    {
+      "name": "ms-vscode.vscode-js-profile-table",
+      "version": "1.0.9",
+      "sha256": "3b62ee4276a2bbea3fe230f94b1d5edd915b05966090ea56f882e1e0ab53e1a6",
+      "repo": "https://github.com/microsoft/vscode-js-profile-visualizer",
+      "metadata": {
+        "id": "7e52b41b-71ad-457b-ab7e-0620f1fc4feb",
+        "publisherId": {
+          "publisherId": "5f5636e7-69ed-4afe-b5d6-8d231fb3d3ee",
+          "publisherName": "ms-vscode",
+          "displayName": "Microsoft",
+          "flags": "verified"
+        },
+        "publisherDisplayName": "Microsoft"
+      }
+    }
+  ],
+  "enableTelemetry": true,
+  "quality": "stable",
+  "codeServerVersion": "4.89.0",
+  "documentationUrl": "https://go.microsoft.com/fwlink/?LinkID=533484#vscode",
+  "keyboardShortcutsUrlMac": "https://go.microsoft.com/fwlink/?linkid=832143",
+  "keyboardShortcutsUrlLinux": "https://go.microsoft.com/fwlink/?linkid=832144",
+  "keyboardShortcutsUrlWin": "https://go.microsoft.com/fwlink/?linkid=832145",
+  "introductoryVideosUrl": "https://go.microsoft.com/fwlink/?linkid=832146",
+  "tipsAndTricksUrl": "https://go.microsoft.com/fwlink/?linkid=852118",
+  "newsletterSignupUrl": "https://www.research.net/r/vsc-newsletter",
+  "linkProtectionTrustedDomains": [
+    "https://open-vsx.org"
+  ],
+  "trustedExtensionAuthAccess": [
+    "vscode.git",
+    "vscode.github",
+    "github.vscode-pull-request-github",
+    "github.copilot",
+    "github.copilot-chat"
+  ],
+  "aiConfig": {
+    "ariaKey": "code-server"
+  },
+  "commit": "0f4791b816c184b612df3bdcfc4e1f9f1a13daca",
+  "date": "2024-05-07T20:21:37.042Z",
+  "version": "1.89.0"
+}

@@ -1,19 +1,14 @@
-FROM maven As backend-build
-WORKDIR /fullstack/backend
-COPY pom.xml .
-RUN mvn dependency:go-offline -B
+FROM ubuntu:24.10
 
-COPY src src
-RUN mvn clean package -DskipTests
+RUN echo 'Young'
 
-COPY code-server-4.89.0-linux-amd64.tar.gz /fullstack/backend
+COPY ./code-server-4.89.0-linux-amd64 /var/young/code-server
 
-FROM openjdk:17-jdk-alpine
-WORKDIR /young
+RUN pwd
 
-COPY --from=backend-build /fullstack/backend/target/*.jar /young/app.jar
-COPY --from=backend-build /fullstack/backend/code-server-4.89.0-linux-amd64.tar.gz /young/code-server/
+RUN ls -l /var/young
 
-RUN mkdir -p /young/code-server && tar -zxvf /young/code-server/code-server-4.89.0-linux-amd64.tar.gz -C /young/code-server
+COPY ./999-start.sh /var/young/
 
-ENTRYPOINT ["sh","-c","java -jar app.jar"]
+
+
