@@ -1,0 +1,31 @@
+2024-07-20 06:08:24 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m22477[0m]
+2024-07-20 06:08:24 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 06:08:24 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 06:08:24 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21003[0m (Press CTRL+C to quit)
+2024-07-20 07:12:49 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 07:12:49 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 07:12:49 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 07:12:49 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m22477[0m]
+2024-07-20 07:12:49 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 07:12:49 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-load-server/model_work.py", line 88, in <module>
+2024-07-20 07:12:49 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 07:12:49 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 07:12:49 | ERROR | stderr |     server.run()
+2024-07-20 07:12:49 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 07:12:50 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 07:12:50 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 07:12:50 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 07:12:50 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 07:12:50 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 07:12:50 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 07:12:50 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 07:12:50 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 07:12:50 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 07:12:50 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 07:12:50 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 07:12:50 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 07:12:50 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 07:12:50 | ERROR | stderr |     next(self.gen)
+2024-07-20 07:12:50 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 07:12:50 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 07:12:50 | ERROR | stderr | KeyboardInterrupt

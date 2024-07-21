@@ -1,0 +1,354 @@
+2024-07-20 04:53:10 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 04:53:10 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 76, in <module>
+2024-07-20 04:53:10 | ERROR | stderr |     from model_adapters import InternVLModelAdapter
+2024-07-20 04:53:10 | ERROR | stderr | ModuleNotFoundError: No module named 'model_adapters'
+2024-07-20 04:54:13 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 04:54:13 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 76, in <module>
+2024-07-20 04:54:13 | ERROR | stderr |     from model_adapters import InternVLModelAdapter
+2024-07-20 04:54:13 | ERROR | stderr | ModuleNotFoundError: No module named 'model_adapters'
+2024-07-20 04:54:31 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 04:54:31 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 93, in <module>
+2024-07-20 04:54:31 | ERROR | stderr |     model = model,
+2024-07-20 04:54:31 | ERROR | stderr | NameError: name 'model' is not defined
+2024-07-20 04:54:42 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 04:54:42 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 90, in <module>
+2024-07-20 04:54:42 | ERROR | stderr |     model_worker = ModelWorker(
+2024-07-20 04:54:42 | ERROR | stderr | TypeError: ModelWorker.__init__() missing 1 required positional argument: 'model'
+2024-07-20 04:54:56 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 04:54:56 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 89, in <module>
+2024-07-20 04:54:56 | ERROR | stderr |     model_worker = ModelWorker(
+2024-07-20 04:54:56 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 35, in __init__
+2024-07-20 04:54:56 | ERROR | stderr |     self._check_register_info_to_controller()
+2024-07-20 04:54:56 | ERROR | stderr | AttributeError: 'ModelWorker' object has no attribute '_check_register_info_to_controller'. Did you mean: 'check_register_info_to_controller'?
+2024-07-20 04:55:08 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m10581[0m]
+2024-07-20 04:55:08 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 04:55:08 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 04:55:08 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21002[0m (Press CTRL+C to quit)
+2024-07-20 04:57:48 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 04:57:48 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 04:57:48 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 04:57:48 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m10581[0m]
+2024-07-20 04:57:48 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 04:57:48 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 97, in <module>
+2024-07-20 04:57:48 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 04:57:48 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 04:57:48 | ERROR | stderr |     server.run()
+2024-07-20 04:57:48 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 04:57:48 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 04:57:48 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 04:57:48 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 04:57:48 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 04:57:48 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 04:57:48 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 04:57:48 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 04:57:48 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 04:57:48 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 04:57:48 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 04:57:48 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 04:57:48 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 04:57:48 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 04:57:48 | ERROR | stderr |     next(self.gen)
+2024-07-20 04:57:48 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 04:57:48 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 04:57:48 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 04:57:50 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 04:57:50 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 89, in <module>
+2024-07-20 04:57:50 | ERROR | stderr |     model_worker = ModelWorker(
+2024-07-20 04:57:50 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 36, in __init__
+2024-07-20 04:57:50 | ERROR | stderr |     threading.Thread(target=self._send_heart_beat_to_controller).start()
+2024-07-20 04:57:50 | ERROR | stderr | AttributeError: 'ModelWorker' object has no attribute '_send_heart_beat_to_controller'. Did you mean: 'send_heart_beat_to_controller'?
+2024-07-20 04:57:59 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m11016[0m]
+2024-07-20 04:57:59 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 04:57:59 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 04:57:59 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21002[0m (Press CTRL+C to quit)
+2024-07-20 05:00:21 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 05:00:21 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 05:00:21 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 05:00:21 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m11016[0m]
+2024-07-20 05:00:21 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:00:21 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 97, in <module>
+2024-07-20 05:00:21 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 05:00:21 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 05:00:21 | ERROR | stderr |     server.run()
+2024-07-20 05:00:21 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 05:00:21 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 05:00:21 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 05:00:21 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 05:00:21 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 05:00:21 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 05:00:21 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 05:00:21 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 05:00:21 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 05:00:21 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 05:00:21 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 05:00:21 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 05:00:21 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 05:00:21 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 05:00:21 | ERROR | stderr |     next(self.gen)
+2024-07-20 05:00:21 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 05:00:21 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 05:00:21 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 05:00:21 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 05:00:21 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:00:21 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 05:00:21 | ERROR | stderr |     lock.acquire()
+2024-07-20 05:00:21 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 05:04:00 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m12361[0m]
+2024-07-20 05:04:00 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 05:04:00 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 05:04:00 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21001[0m (Press CTRL+C to quit)
+2024-07-20 05:04:21 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 05:04:22 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 05:04:22 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 05:04:22 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m12361[0m]
+2024-07-20 05:04:22 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:04:22 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 97, in <module>
+2024-07-20 05:04:22 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 05:04:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 05:04:22 | ERROR | stderr |     server.run()
+2024-07-20 05:04:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 05:04:22 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 05:04:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 05:04:22 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 05:04:22 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 05:04:22 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 05:04:22 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 05:04:22 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 05:04:22 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 05:04:22 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 05:04:22 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 05:04:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 05:04:22 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 05:04:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 05:04:22 | ERROR | stderr |     next(self.gen)
+2024-07-20 05:04:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 05:04:22 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 05:04:22 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 05:04:22 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 05:04:22 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:04:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 05:04:22 | ERROR | stderr |     lock.acquire()
+2024-07-20 05:04:22 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 05:06:01 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m12725[0m]
+2024-07-20 05:06:01 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 05:06:01 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 05:06:01 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21002[0m (Press CTRL+C to quit)
+2024-07-20 05:06:30 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 05:06:30 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 05:06:30 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 05:06:30 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m12725[0m]
+2024-07-20 05:06:30 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:06:30 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 97, in <module>
+2024-07-20 05:06:30 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 05:06:30 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 05:06:30 | ERROR | stderr |     server.run()
+2024-07-20 05:06:30 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 05:06:30 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 05:06:30 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 05:06:30 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 05:06:30 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 05:06:30 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 05:06:30 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 05:06:30 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 05:06:30 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 05:06:30 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 05:06:30 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 05:06:30 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 05:06:30 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 05:06:30 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 05:06:30 | ERROR | stderr |     next(self.gen)
+2024-07-20 05:06:30 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 05:06:30 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 05:06:30 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 05:06:30 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 05:06:30 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:06:30 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 05:06:30 | ERROR | stderr |     lock.acquire()
+2024-07-20 05:06:30 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 05:06:34 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m12941[0m]
+2024-07-20 05:06:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 05:06:34 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 05:06:34 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21002[0m (Press CTRL+C to quit)
+2024-07-20 05:57:25 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m19804[0m]
+2024-07-20 05:57:25 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 05:57:25 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 05:57:25 | ERROR | stderr | [31mERROR[0m:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 21002): address already in use
+2024-07-20 05:57:25 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 05:57:25 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 05:57:35 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 05:57:35 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:57:35 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 05:57:35 | ERROR | stderr |     lock.acquire()
+2024-07-20 05:57:35 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 05:59:34 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m20334[0m]
+2024-07-20 05:59:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 05:59:34 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 05:59:34 | ERROR | stderr | [31mERROR[0m:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 21002): address already in use
+2024-07-20 05:59:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 05:59:34 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 05:59:52 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 05:59:52 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 05:59:52 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 05:59:52 | ERROR | stderr |     lock.acquire()
+2024-07-20 05:59:52 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 05:59:55 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m20470[0m]
+2024-07-20 05:59:55 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 05:59:55 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 05:59:55 | ERROR | stderr | [31mERROR[0m:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 21002): address already in use
+2024-07-20 05:59:55 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 05:59:55 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 06:00:22 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 06:00:22 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 06:00:22 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 06:00:22 | ERROR | stderr |     lock.acquire()
+2024-07-20 06:00:22 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 06:01:34 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m20848[0m]
+2024-07-20 06:01:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 06:01:34 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 06:01:34 | ERROR | stderr | [31mERROR[0m:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 21002): address already in use
+2024-07-20 06:01:34 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 06:01:34 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 06:02:52 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 06:02:52 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 06:02:52 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 06:02:52 | ERROR | stderr |     lock.acquire()
+2024-07-20 06:02:52 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 06:06:27 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m21874[0m]
+2024-07-20 06:06:27 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 06:06:27 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 06:06:27 | ERROR | stderr | [31mERROR[0m:    [Errno 98] error while attempting to bind on address ('127.0.0.1', 21002): address already in use
+2024-07-20 06:06:27 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 06:06:27 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 06:06:56 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 06:06:56 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 06:06:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 06:06:56 | ERROR | stderr |     lock.acquire()
+2024-07-20 06:06:56 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 06:06:59 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m21995[0m]
+2024-07-20 06:06:59 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 06:06:59 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 06:06:59 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21005[0m (Press CTRL+C to quit)
+2024-07-20 06:07:26 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 06:07:26 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 06:07:26 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 06:07:26 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m21995[0m]
+2024-07-20 06:07:26 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 06:07:26 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 97, in <module>
+2024-07-20 06:07:26 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 06:07:26 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 06:07:26 | ERROR | stderr |     server.run()
+2024-07-20 06:07:26 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 06:07:26 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 06:07:26 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 06:07:26 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 06:07:26 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 06:07:26 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 06:07:26 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 06:07:26 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 06:07:26 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 06:07:26 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 06:07:26 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 06:07:26 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 06:07:26 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 06:07:26 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 06:07:26 | ERROR | stderr |     next(self.gen)
+2024-07-20 06:07:26 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 06:07:26 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 06:07:26 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 06:07:26 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 06:07:26 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 06:07:26 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 06:07:26 | ERROR | stderr |     lock.acquire()
+2024-07-20 06:07:26 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 06:07:29 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m22145[0m]
+2024-07-20 06:07:29 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 06:07:29 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 06:07:29 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21005[0m (Press CTRL+C to quit)
+2024-07-20 07:08:47 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 07:08:47 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 07:08:47 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 07:08:47 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m22145[0m]
+2024-07-20 07:08:47 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 07:08:47 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 97, in <module>
+2024-07-20 07:08:47 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 07:08:47 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 07:08:47 | ERROR | stderr |     server.run()
+2024-07-20 07:08:47 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 07:08:47 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 07:08:47 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 07:08:47 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 07:08:47 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 07:08:47 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 07:08:47 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 07:08:47 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 07:08:47 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 07:08:47 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 07:08:47 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 07:08:47 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 07:08:47 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 07:08:47 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 07:08:47 | ERROR | stderr |     next(self.gen)
+2024-07-20 07:08:47 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 07:08:47 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 07:08:47 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 07:08:47 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 07:08:47 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 07:08:47 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 07:08:47 | ERROR | stderr |     lock.acquire()
+2024-07-20 07:08:47 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 07:27:38 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m38743[0m]
+2024-07-20 07:27:38 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 07:27:38 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 07:27:38 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21005[0m (Press CTRL+C to quit)
+2024-07-20 07:27:56 | ERROR | stderr | [32mINFO[0m:     Shutting down
+2024-07-20 07:27:56 | ERROR | stderr | [32mINFO[0m:     Waiting for application shutdown.
+2024-07-20 07:27:56 | ERROR | stderr | [32mINFO[0m:     Application shutdown complete.
+2024-07-20 07:27:56 | ERROR | stderr | [32mINFO[0m:     Finished server process [[36m38743[0m]
+2024-07-20 07:27:56 | ERROR | stderr | Error in sys.excepthook:
+2024-07-20 07:27:56 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/linecache.py", line 93, in updatecache
+2024-07-20 07:27:56 | ERROR | stderr |     stat = os.stat(fullname)
+2024-07-20 07:27:56 | ERROR | stderr | FileNotFoundError: [Errno 2] No such file or directory: 'uvloop/loop.pyx'
+2024-07-20 07:27:56 | ERROR | stderr | 
+2024-07-20 07:27:56 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-07-20 07:27:56 | ERROR | stderr | 
+2024-07-20 07:27:56 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/linecache.py", line 46, in getlines
+2024-07-20 07:27:56 | ERROR | stderr |     return updatecache(filename, module_globals)
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/linecache.py", line 93, in updatecache
+2024-07-20 07:27:56 | ERROR | stderr |     stat = os.stat(fullname)
+2024-07-20 07:27:56 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 07:27:56 | ERROR | stderr | 
+2024-07-20 07:27:56 | ERROR | stderr | Original exception was:
+2024-07-20 07:27:56 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 07:27:56 | ERROR | stderr |   File "/young/mounts/gradio/multi-web-server/model-server/model_work.py", line 97, in <module>
+2024-07-20 07:27:56 | ERROR | stderr |     uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+2024-07-20 07:27:56 | ERROR | stderr |     server.run()
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+2024-07-20 07:27:56 | ERROR | stderr |     return asyncio.run(self.serve(sockets=sockets))
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/asyncio/runners.py", line 44, in run
+2024-07-20 07:27:56 | ERROR | stderr |     return loop.run_until_complete(main)
+2024-07-20 07:27:56 | ERROR | stderr |   File "uvloop/loop.pyx", line 1511, in uvloop.loop.Loop.run_until_complete
+2024-07-20 07:27:56 | ERROR | stderr |   File "uvloop/loop.pyx", line 1504, in uvloop.loop.Loop.run_until_complete
+2024-07-20 07:27:56 | ERROR | stderr |   File "uvloop/loop.pyx", line 1377, in uvloop.loop.Loop.run_forever
+2024-07-20 07:27:56 | ERROR | stderr |   File "uvloop/loop.pyx", line 555, in uvloop.loop.Loop._run
+2024-07-20 07:27:56 | ERROR | stderr |   File "uvloop/loop.pyx", line 474, in uvloop.loop.Loop._on_idle
+2024-07-20 07:27:56 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 83, in uvloop.loop.Handle._run
+2024-07-20 07:27:56 | ERROR | stderr |   File "uvloop/cbhandles.pyx", line 63, in uvloop.loop.Handle._run
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 68, in serve
+2024-07-20 07:27:56 | ERROR | stderr |     with self.capture_signals():
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+2024-07-20 07:27:56 | ERROR | stderr |     next(self.gen)
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/site-packages/uvicorn/server.py", line 328, in capture_signals
+2024-07-20 07:27:56 | ERROR | stderr |     signal.raise_signal(captured_signal)
+2024-07-20 07:27:56 | ERROR | stderr | KeyboardInterrupt
+2024-07-20 07:27:56 | ERROR | stderr | Exception ignored in: <module 'threading' from '/opt/miniconda3/lib/python3.10/threading.py'>
+2024-07-20 07:27:56 | ERROR | stderr | Traceback (most recent call last):
+2024-07-20 07:27:56 | ERROR | stderr |   File "/opt/miniconda3/lib/python3.10/threading.py", line 1567, in _shutdown
+2024-07-20 07:27:56 | ERROR | stderr |     lock.acquire()
+2024-07-20 07:27:56 | ERROR | stderr | KeyboardInterrupt:
+2024-07-20 07:29:52 | ERROR | stderr | [32mINFO[0m:     Started server process [[36m39428[0m]
+2024-07-20 07:29:52 | ERROR | stderr | [32mINFO[0m:     Waiting for application startup.
+2024-07-20 07:29:52 | ERROR | stderr | [32mINFO[0m:     Application startup complete.
+2024-07-20 07:29:52 | ERROR | stderr | [32mINFO[0m:     Uvicorn running on [1mhttp://127.0.0.1:21005[0m (Press CTRL+C to quit)
